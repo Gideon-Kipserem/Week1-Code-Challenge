@@ -1,6 +1,6 @@
 function estimateTransactionFee(amountToSend) {
-  const minFee = 10;
-  const maxFee = 70;
+  const minFee = 10;//maximum fee
+  const maxFee = 70;//maximum fee
   const feeRate = 0.015; // 1.5% in decimal
 
   // Calculates initial  fee
@@ -14,15 +14,15 @@ function estimateTransactionFee(amountToSend) {
   }
 
   const totalDebit = amountToSend + fee;// total amount to be debited from client
-
+//output
   console.log(`Sending KES ${amountToSend}:`);
   console.log(`Calculated Transaction Fee: KES ${fee}`);
   console.log(`Total amount to be debited: KES ${totalDebit}`);
   console.log("Send Money Securely!");
 }
 
-// Prompts user and calls action
+// Prompts user 
 const input = prompt("Unatuma Ngapi? (KES):");
 const amount = Number(input);
-
+//calls action
 estimateTransactionFee(amount);
