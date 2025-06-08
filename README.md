@@ -1,3 +1,5 @@
+# WEEK1 CODE CHALLENGE
+
 This project contains three simple JavaScript applications. Each task  can be tested via the browser's console by opening the sibling index.html file
 
 # Modular Project Structure
@@ -96,7 +98,10 @@ Results are logged in the browser console
 
 
 
-#Author
+# Author
 Gideon Kimaiyo
+
+# License
+Licensed under:[MIT License](https://opensource.org/licenses/MIT)
 
 
