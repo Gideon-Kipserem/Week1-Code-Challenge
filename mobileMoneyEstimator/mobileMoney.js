@@ -1,11 +1,23 @@
 function estimateTransactionFee(amountToSend) {
+
+ 
+
   const minFee = 10;//maximum fee
   const maxFee = 70;//maximum fee
   const feeRate = 0.015; // 1.5% in decimal
 
+
+  // Validate input before processing
+  if (Number.isNaN(amountToSend) || amountToSend <= 0) {
+    console.error("Please input a valid amount.");
+    return; // Exit function early
+  }
+
   // Calculates initial  fee
   let fee = amountToSend * feeRate;
 
+
+  
   // Apply min and max fee limits
   if (fee < minFee) {
     fee = minFee;
@@ -24,5 +36,10 @@ function estimateTransactionFee(amountToSend) {
 // Prompts user 
 const input = prompt("Unatuma Ngapi? (KES):");
 const amount = Number(input);
+
+
+
 //calls action
 estimateTransactionFee(amount);
+
+
